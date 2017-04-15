@@ -1,0 +1,90 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}
+\author{Conal Cosgrove}
+
+\usepackage{tabularx} 
+
+\begin{document}
+\title{Countability of Sets}
+\huge{Countability Of Sets}
+
+\paragraph{\underline{Task:} Understand what it means for a set to be countable, countably infinite, uncountably infinite. Show that the set of all languages over a finite alphabet is uncountably infinite, whereas the set of all regular languages over a finite alphabet is countably infinite.}
+\paragraph{We want to understand sizes of sets. In the unit on functions last term, when we looked at functions defined on finite sets, we wrote down a set A with \emph{n} elements as $A = \lbrace  a_{1},..., a_{n} \rbrace$. \newline
+ \underline{This notation mimics the process of counting :}
+ $a_{1} $ is the first element of $A$, $a_{2} $ is the second element of $A$, and so on up to $a_{n}$ is the $n^{th}$ element of A. In other words, another way of saying A is a set of $n$ elements is that there exists a bijective function $f : A \longrightarrow \lbrace 1,2,...,n \rbrace $, let $J_{n} = \lbrace 1,2,...,n\rbrace .$} 
+ 
+ \paragraph{\underline{Def:} A set $A$ has $n$ elements $\iff \exists f : A \longrightarrow J_{n}$ a bijection \newline
+ \underline{NB:} This definition works $\forall n \leq 1, n \in \mathbb{N}^{*}$ }
+ 
+
+
+\paragraph{\underline{Notation: } $\exists  f : A \longrightarrow J_{n}$ a bijection is denoted as $A \sim J_{n}$ \newline
+More generally, $A \sim B$ means $\exists f : A \longrightarrow B$ a bijection, and it is a relation on sets. In fact, it is an equivalence relation (check!). $\left[ J_{n}\right]$ is the equivalence class of all sets A of size $n$, i.e. \#$\left(A\right) = n$ }
+
+
+\paragraph{A set $A$ is \underline{finite} if $A \sim J_{n}$ for some $n$ $ \in $    $ \mathbb{N}^{*}$ or $A = \emptyset$.\newline
+A set $A$ is \underline{infinite} if $A$ is not finite.\newline
+\underline{Examples:} $\mathbb{N,Q,R}$, etc. \newline 
+To understand sizes of infinite sets, generalise the construction above. Let $J = \mathbb{N^{*}} = \left\lbrace1,2,...\right\rbrace$ \newline
+\underline{Def:} A set $A$ is \underline{countably infinite} if $A \sim J$. \newline
+\underline{Def:} A set $A$ is \underline{uncountably infinite} if $A$ is neither finite nor countably infinite.\newline
+In fact, we often treat together the cases A is infinite or A is countably infinite since in both of these cases the counting mechanism that is so familiar to us works. Therefore, we have the following definition:}
+
+\paragraph{\underline{Def:} A set $A$ is \underline{countable} if $A$ is finite ($A \sim B$ or $A = \emptyset$) or $A$ is countably infinite ($A \sim B$).\newline
+There is a difference in terminology regarding countability between CS sources (textbooks, articles, etc.) and maths sources. Here is the dictionary:
+}
+\paragraph{}
+\normalsize
+ \begin{table}[ht]
+ \centering
+\begin{tabular}{|c|c|}
+\hline 
+CS & Maths \\ 
+\hline 
+countable & at most countable \\ 
+\hline 
+countably infinite & countable \\ 
+\hline 
+uncountably infinite & uncountable \\ 
+\hline 
+\end{tabular}
+\end{table}
+
+\paragraph{It's best to double check which terminology a source is using.\newline}
+
+\huge
+\paragraph{\underline{Goal:} Characterise $\left[\mathbb{N}\right]$, the equivalence class of countably infinite sets, and $\left[\mathbb{R}\right]$, the equivalence class of uncountably infinite sets the same size as $\mathbb{R}$.\newline
+\underline{Bad News} Both $\left[\mathbb{N}\right]$ and $\left[\mathbb{R}\right]$ consist of infinite sets.\newline
+\underline{Good News} We only care about these two equivalence classes}
+
+\paragraph{\underline{Nb} These are uncountably infinite sets of size bigger than $\mathbb{R}$ that can be obtained from the power set construction, but it is unlikely you will see them in your CS coursework.\newline
+To characterise $\mathbb{N}$ we need to recall the notion of a sequence:\newline
+}
+\paragraph{\underline{Def:} A \underline{sequence} is a set of elements  $\lbrace x_{1},x_{2},...\rbrace$ indexed by J,\newline i.e. $\exists f: J \longrightarrow \lbrace x_{1},x_{2},...\rbrace$ such that $f(n) = x_{n}$   $ \forall n \in J$.}
+
+\paragraph{Recall that sequences and their limits were used to define various notions in calculus (differentiation, interpretation, etc.) Also calculators use sequences in order to compute with various rational and irrational numbers.}
+\newpage
+\paragraph{\underline{Examples} \newline 1. $\bm{\pi \simeq}$ 3.1415... i.e. instead of $\pi$ we can work with the following sequence of rational numbers :\newline $x_{1} = 3$, $x_{2} = 3.1$, $x_{3} = 3.14$,  $x_{4} = 3.141$, $x_{5} = 3.1415,...$ $\lim\limits_{n\to\infty}x_{n} = \pi$\newline
+$\pi$ is irrational $\pi \in \mathbb{R} \backslash  \mathbb{Q}$}
+
+\paragraph{2. $\bm{\frac{1}{3	} \simeq 0.333...}$ means we can set up the sequence of rational numbers $x_{1} = 0$, $x_{2} = 0.3$,  $x_{3} = 0.33$,  $x_{4} = 0.333$,  $x_{5} = 0.3333$ etc. such that $\lim\limits_{n\to\infty} x_{n} = \frac{1}{3}$.\newline 
+Note that $\frac{1}{3} \in \mathbb{Q}.$\newline
+\underline{Restatement of the definition of countably infinite:} A set $A$ is countably infinite if its elements can be arranged in a sequence $\lbrace x_{1},x_{2},...\rbrace$. This is another of saying $A$ is in bijective correspondence with $J$, i.e $\exists f: A \longrightarrow J$ a bijection, namely $A \sim J$.\newline
+\underline{Application of the restatement:} $\mathbb{Z} \sim \mathbb{N}$ \newline
+Indeed we can write $\mathbb{Z}$ as a sequence since $\mathbb{Z} = \lbrace 0,1,-1,2,-2,...\rbrace$ so $\mathbb{Z} \in \left[\mathbb{N}\right]$, $\mathbb{Z}$ is countably infinite like $\mathbb{N}$.\newline
+\underline{Big difference between finite and infinite sets:}\newline
+Let $A$,$B$ be finite sets such that $A\subsetneqq B$, i.e. $A \subset B$ but $A \neq B$. Then $A \nsim B$ since $\#(A) < \#(B)$ and $J_{n} \nsim J_{m}$ if $n \neq m$.\newline \newline }
+\newpage
+\paragraph{Let $A,B$ be infinite sets such that $A\subsetneqq B$, $A \subset B$, but $A \neq B$.\newline
+It is possible that $A \sim B$. We saw this behaviour in Hilbert's hotel problem (Hilbert's Paradox of the Grand Hotel): $\mathbb{N}^{*} \longrightarrow \subsetneqq \mathbb{N}$\newline
+ but $\mathbb{N} \sim \mathbb{N}^{*}$ via the bijection $f: \mathbb{N} \longrightarrow \mathbb{N}^{*}$ given by $f(n) = n + 1$ so $\lbrace 0,1,2,...\rbrace \sim \lbrace 1,2,3,...\rbrace$ \newline
+In the same vein, we get the following result:\newline
+\underline{Theorem:} Every infinite subset of a countably infinite set is itself countably infinite.\newline 
+\underline{Proof:} Let $E \subseteq A$ be the subset in question, where E is infinite and A is countably infinite. $A$ is countably infinite $\iff A \sim J \iff A = \lbrace x_{1},x_{2},...\rbrace$\newline
+To show $E$ is countably infinite, we want to show we can represent $E = \lbrace x_{n1},x_{n2},...\rbrace$. We construct this sequence of $n_{j}$'s from the indices of the elements of $A$ in the enumeration $\lbrace x_{1},x_{2},...\rbrace$\newline
+Let $n_{1}$ be the smallest integer in $J$ such that $x_{n_{1}} \in E \subseteq A$. }
+\end{document}
