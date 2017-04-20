@@ -4,6 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{bm}
+\usepackage{graphicx}
 \author{Conal Cosgrove}
 
 \usepackage{tabularx} 
@@ -101,12 +102,28 @@ Let $A = \lbrace x_{1}, x_{2}, ...\rbrace$ be an enumeration of $A$ (i.e. writin
 \newline
 \underline{Theorem:} Let $\lbrace A_{n}\rbrace _{n=1,2,...}$ be a sequence of countably infinite sets.}
 
-\paragraph{Let $\bigcup\limits_{n=1}^{\infty} A_{n}.$ Then $S$ is countably infinite.
+\paragraph{Let $S = \bigcup\limits_{n=1}^{\infty} A_{n}.$ Then $S$ is countably infinite.
 \newline
 \underline{Proof:} Each $A_{n}$ is countably infinite $\iff$
 \newline 
- $A_{n} \sim J$ $ \forall n \leq 1 \iff A_{n} = \lbrace x_{n_{k}}\rbrace _{k = 1,2,...} = \lbrace x_{n_{1}},x_{n_{2}},x_{n_{3}},...\rbrace$
+ $A_{n} \sim J$ $ \forall n \geq 1 \iff A_{n} = \lbrace x_{n_{k}}\rbrace _{k = 1,2,...} = \lbrace x_{n_{1}},x_{n_{2}},x_{n_{3}},...\rbrace$
  \newline 
  We use two indices like for the entries of a matrix. The first index tells us which $A_{n}$ set the element belongs to, while the second index tells us where the element is in the enumeration (the counting) of $A_{n}$.
  }
+ \newpage
+ \centerline{\includegraphics[scale=0.5]{images/{1}}}
+
+ 
+\paragraph{$\lbrace x_{11},x_{12},x_{21},x_{31},x_{22},x_{13},x_{14},x_{23},
+x_{32},x_{41},...\rbrace = \bigcup\limits_{n=1}^{\infty} A_{n} = S$ is countably infinite because even if some $x_{ij}$'s are the same.
+\newline
+$A_{n} \subseteq S$ $\forall n \geq 1 $ and $A_{n} \sim J$  }
+
+\paragraph{\underline{Corollary 1:} Suppose an indexing set $I$ is countable, and $\forall i \in I,$
+\newline 
+ $A_{i}$ is countable, then $T =  \bigcup\limits_{i \in I}$ is countable.}
+ 
+ \paragraph{\underline{Corollary 2:} Let $A$ be a countably infinite set, and let $A^{n} = A x ... x A$
+\newline 
+}
 \end{document}
