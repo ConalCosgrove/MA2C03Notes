@@ -93,5 +93,20 @@ We construct the rest of the sequence of $n_{j}’s$ by induction. Say we have c
 \paragraph{\underline{Remark:} $\lbrace x_{n_{1}} , x_{n_{2}} , ...\rbrace$ is called a subsequence of $\lbrace x_{1} , x_{2} , ...\rbrace$}
 
 \paragraph{\underline{Algorithmic restatement of previous proof:}\newline
-Let $A = \lbrace x_{1}, x_{2}, ...\rbrace$ be an enumeration of $A$ (i.e. writing the countably infinite set $A$ as a sequence). We process $\lbrace x_{1}, x_{2}, ...\rbrace$ as a queue. First look at $x_{1}$. If $x_{1} \in E$, keep $x_{1}$ and let $n_{1} = 1$; otherwise, discard $x_{1}$. Process each $x_{i}$ in turn keeping only those that are in $E$. Their indices form the subsequence $\lbrace n_{j} \rbrace _{j = 1,2,...}$ where $E = \lbrace x_{n_{1}},x_{n_{2}},x_{n_{3}},...\rbrace$}
+Let $A = \lbrace x_{1}, x_{2}, ...\rbrace$ be an enumeration of $A$ (i.e. writing the countably infinite set $A$ as a sequence). We process $\lbrace x_{1}, x_{2}, ...\rbrace$ as a queue. First look at $x_{1}$. If $x_{1} \in E$, keep $x_{1}$ and let $n_{1} = 1$; otherwise, discard $x_{1}$. Process each $x_{i}$ in turn, keeping only those that are in $E$. Their indices form the subsequence $\lbrace n_{j} \rbrace _{j = 1,2,...}$ where $E = \lbrace x_{n_{1}},x_{n_{2}},x_{n_{3}},...\rbrace$.}
+
+\paragraph{Next, we want to show $\mathbb{Q} \sim \mathbb{N}$, the set of rational numbers is countably infinite.
+\newline
+\underline{Notation:} A sequence $\lbrace x_{n_{1}} , x_{n_{2}} \rbrace$ can also be denoted by $\lbrace x_{i}\rbrace _{i=1,2,...}$
+\newline
+\underline{Theorem:} Let $\lbrace A_{n}\rbrace _{n=1,2,...}$ be a sequence of countably infinite sets.}
+
+\paragraph{Let $\bigcup\limits_{n=1}^{\infty} A_{n}.$ Then $S$ is countably infinite.
+\newline
+\underline{Proof:} Each $A_{n}$ is countably infinite $\iff$
+\newline 
+ $A_{n} \sim J$ $ \forall n \leq 1 \iff A_{n} = \lbrace x_{n_{k}}\rbrace _{k = 1,2,...} = \lbrace x_{n_{1}},x_{n_{2}},x_{n_{3}},...\rbrace$
+ \newline 
+ We use two indices like for the entries of a matrix. The first index tells us which $A_{n}$ set the element belongs to, while the second index tells us where the element is in the enumeration (the counting) of $A_{n}$.
+ }
 \end{document}
