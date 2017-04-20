@@ -123,7 +123,33 @@ $A_{n} \subseteq S$ $\forall n \geq 1 $ and $A_{n} \sim J$  }
 \newline 
  $A_{i}$ is countable, then $T =  \bigcup\limits_{i \in I}$ is countable.}
  
- \paragraph{\underline{Corollary 2:} Let $A$ be a countably infinite set, and let $A^{n} = A x ... x A$
-\newline 
+ \paragraph{\underline{Proof:} The biggest set we can obtain is when $I$ is countably infinite and each $A_{i}$ is countably infinite. By the previous theorem, $T$ is countably infinite in that case. Therefore $T$ is at most countably infinite (may be finite if $I$ is finite and each $A_{i}$ is finite), so $T$ is countable.$(Q.E.D)$}
+ 
+ \paragraph{\underline{Corollary 2:} Let $A$ be a countably infinite set, and let $A^{n} =$ $A \times ... \times A = \lbrace (a_{1},a_{2},...,a_{n}) | a_{1},a_{2},...,a_{n} \in A \rbrace$. 
+ \newline
+ Then $A^{n}$ is countably infinite. 
 }
+
+\paragraph{\underline{Proof:} We use induction:
+\newline 
+\underline{Base case} $n = 1$ $A^{1} = A \sim J \implies A^{1}$ is countably infinite
+\newline
+\underline{Inductive step} Assume $A^{n-1}$ is countably infinite.
+\newline 
+$A^{n} = A^{n-1} \times A = \lbrace  (b,a) |  b \in A^{n-1}, a \in A\rbrace$
+\newline 
+$\forall b \in A^{n-1}$ $S_{b}  = \lbrace (b,a) \in A^{n} | a \in A \rbrace \sim J \sim A \implies S_{b}$ is countably infinite. $A^{n} = \bigcup\limits_{b \in A^{n-1}} S \sim J $ by Corollary 1, so $A^{n}$  is indeed countably infinite as claimed. $(Q.E.D)$ 
+}
+
+\paragraph{\underline{Corollary 3:} $\mathbb{N}^{n}$ is countably infinite $\forall n \geq 1$.
+\newline 
+\underline{Proof:} $\mathbb{N} \sim J$ so the result follows form Corollary 2. $(Q.E.D)$}
+
+\paragraph{\underline{Corollary 4:} $\mathbb{Z}^{n}$ is countably infinite $\forall n \geq 1$.
+\newline
+\underline{Proof:} We showed $\mathbb{Z} \sim J$, so the result follows from Corollary 2. $(Q.E.D)$}
+
+\paragraph{\underline{Corollary 5:} $\mathbb{Q}$ is countably infinite
+\newline
+\underline{Proof:} $\mathbb{Q} = \lbrace \frac{p}{q} $ $ $ | $  q \neq 0,$ $ p,q \in \mathbb{Z}, (p,q) = 1$ (no common factors)$ \rbrace$ , but we can represent $\mathbb{Q}$ as $\lbrace (p,q) | q \neq 0 p,q \in \mathbb{Z} \rbrace$}
 \end{document}
