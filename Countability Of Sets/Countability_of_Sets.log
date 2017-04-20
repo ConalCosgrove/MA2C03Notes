@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.20)  20 APR 2017 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.20)  20 APR 2017 20:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -497,11 +497,12 @@ c/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Countability_of_Sets.pdf (8 pages, 188752 bytes).
+/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015basic/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Countability_of_Sets.pdf (8 pages, 192860 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
