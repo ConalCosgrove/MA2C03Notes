@@ -91,4 +91,7 @@ To show $E$ is countably infinite, we want to show we can represent $E = \lbrace
 We construct the rest of the sequence of $n_{j}’s$ by induction. Say we have constructed $n_{1}, n_{2}, ..., n_{k-1} \in \mathbb{N}^{*}$ Let $n_{k}$ be the smallest integer greater than $n_{k-1}$ such that $x_{n_{k}} \in E$. By construction $n_{1} < n_{2} < ...$ and $E = \lbrace x_{n_{1}} < x_{n_{2}} < ...\rbrace$ $(Q.E.D)$}
 \newpage
 \paragraph{\underline{Remark:} $\lbrace x_{n_{1}} , x_{n_{2}} , ...\rbrace$ is called a subsequence of $\lbrace x_{1} , x_{2} , ...\rbrace$}
+
+\paragraph{\underline{Algorithmic restatement of previous proof:}\newline
+Let $A = \lbrace x_{1}, x_{2}, ...\rbrace$ be an enumeration of $A$ (i.e. writing the countably infinite set $A$ as a sequence). We process $\lbrace x_{1}, x_{2}, ...\rbrace$ as a queue. First look at $x_{1}$. If $x_{1} \in E$, keep $x_{1}$ and let $n_{1} = 1$; otherwise, discard $x_{1}$. Process each $x_{i}$ in turn keeping only those that are in $E$. Their indices form the subsequence $\lbrace n_{j} \rbrace _{j = 1,2,...}$ where $E = \lbrace x_{n_{1}},x_{n_{2}},x_{n_{3}},...\rbrace$}
 \end{document}
