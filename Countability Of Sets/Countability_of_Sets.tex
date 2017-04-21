@@ -152,4 +152,35 @@ $\forall b \in A^{n-1}$ $S_{b}  = \lbrace (b,a) \in A^{n} | a \in A \rbrace \sim
 \paragraph{\underline{Corollary 5:} $\mathbb{Q}$ is countably infinite
 \newline
 \underline{Proof:} $\mathbb{Q} = \lbrace \frac{p}{q} \ |  q \neq 0,$ $ p,q \in \mathbb{Z}, (p,q) = 1$ (no common factors)$ \rbrace$ , but we can represent $\mathbb{Q}$ as $\frac{\lbrace (p,q) \  | \ q \neq 0 \  p,q \in \mathbb{Z} \rbrace }{ \sim }$ $ \subseteq \mathbb{Z}^{2}$, where $(p_{1},q_{1}) \sim (p_{2},q_{2}) \iff \frac{p_{1}}{q_{1}} = \frac{p_{2}}{q_{2}} \iff p_{1} \ q_{2} = p_{2} \ q_{1}$ by cross multiplication. We also know $\mathbb{Z} \subseteq \mathbb{Q}$ (let $q = 1$). Therefore, $\mathbb{Q}$ is sandwiched between $\mathbb{Z} = \mathbb{Z}^{1}$ and $\mathbb{Z}^{2}$, both of which are countably infinite $\implies \mathbb{Q}$ is countably infinite. $Q.E.D$}
+\newpage
+
+\paragraph{\underline{Remark:} \newline We can give a visual representation of the previous argument\newline as follows:\newline }
+\paragraph{}
+
+\includegraphics[scale=0.15]{images/2}
+
+\paragraph{The dots are pairs (p,q) w/ $q \neq 0 \ p,q \in \mathbb{Z}$, which form a lattice. We can use the snake trick from the theorem to show that the positive rational numbers $Q^{+} =  \lbrace \frac{p}{q} \in \mathbb{Q} \ | \ \frac{p}{q} > 0\rbrace$ are countably infinite.}
+\paragraph{}
+
+\begin{minipage}[b]{0.35\linewidth}
+\includegraphics[scale=0.07]{images/3}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.65\linewidth}
+\normalsize
+Similarly we can show\newline $\mathbb{Q}^{-} = \lbrace \frac{p}{q} \in \mathbb{Q} \ | \ \frac{p}{q} > 0 \rbrace$ \newline is countably infinite.\newline
+\linebreak
+\linebreak
+\linebreak
+\end{minipage}
+
+\paragraph{Then $\mathbb{Q} = \mathbb{Q}^{-} \cup \lbrace 0 \rbrace \cup \lbrace \mathbb{Q}^{+} \rbrace$ is countably infinite by Corollary 1.\newline 
+Next, show that the set of sequences of 0's and 1's is uncountably infinite. We will use this result to show other sets are uncountably infinite.}
+
+\paragraph{\underline{Theorum:} Let $A$ be the set of all sequences $s = \lbrace x_{1},x_{2},...\rbrace = \lbrace x_{n} \rbrace _{n = 1,2,3...}$ such that $x_{n} \in \lbrace 0,1 \rbrace \ \forall n \geq 1.$ Then $A$ is uncountably infinite}
+
+\paragraph{\underline{Remark:} This result is proven via a clever construction, which is due to Georg Cantor (1845 - 1918). A very famous German mathematician who invented set theory. Cantor also came up with the diagonal argument (snake trick) we used to prove a countably infinite union of countably infinite sets is countably infinite, the idea that sizes of sets should be understood via bijections $(A \sim B for A,B sets).$ As well as the notions of countably infinite and uncountably infinite.}
+
+\paragraph{\underline{Proof:} Assume A is countable $\iff A = \lbrace s_{1},s_{2},...\rbrace$ ,where $s_{j} = \lbrace x_{n}^{j}\rbrace _{n = 1,2,...}$ for $x_{n}^{j} = 0$ or $x_{n}^{j} = 1$. We will now construct a sequence $s_{0}$ of $0's$ and $1's$ that cannot be in the enumeration $\lbrace s_{1},s_{2},...\rbrace$. Let $s_{0}$ be such that  $x_{j}^{0}$ = $\brace 1 if  x_{j}^{j} = 0 \newline 0 if  x_{j}^{j} = 1$
+}
 \end{document}
