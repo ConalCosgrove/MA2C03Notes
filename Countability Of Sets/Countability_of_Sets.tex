@@ -181,6 +181,13 @@ Next, show that the set of sequences of 0's and 1's is uncountably infinite. We 
 
 \paragraph{\underline{Remark:} This result is proven via a clever construction, which is due to Georg Cantor (1845 - 1918). A very famous German mathematician who invented set theory. Cantor also came up with the diagonal argument (snake trick) we used to prove a countably infinite union of countably infinite sets is countably infinite, the idea that sizes of sets should be understood via bijections $(A \sim B for A,B sets).$ As well as the notions of countably infinite and uncountably infinite.}
 
-\paragraph{\underline{Proof:} Assume A is countable $\iff A = \lbrace s_{1},s_{2},...\rbrace$ ,where $s_{j} = \lbrace x_{n}^{j}\rbrace _{n = 1,2,...}$ for $x_{n}^{j} = 0$ or $x_{n}^{j} = 1$. We will now construct a sequence $s_{0}$ of $0's$ and $1's$ that cannot be in the enumeration $\lbrace s_{1},s_{2},...\rbrace$. Let $s_{0}$ be such that  $x_{j}^{0}$ = $\brace 1 if  x_{j}^{j} = 0 \newline 0 if  x_{j}^{j} = 1$
-}
+\paragraph{\underline{Proof:} Assume A is countable $\iff A = \lbrace s_{1},s_{2},...\rbrace$ ,where $s_{j} = \lbrace x_{n}^{j}\rbrace _{n = 1,2,...}$ for $x_{n}^{j} = 0$ or $x_{n}^{j} = 1$. We will now construct a sequence $s_{0}$ of $0's$ and $1's$ that cannot be in the enumeration $\lbrace s_{1},s_{2},...\rbrace$. Let $s_{0}$ be such that 
+}\normalsize
+\begin{equation}
+ 	 x_{j}^{0}=\begin{cases}
+    1, & \text{if $x_{j}^{j} = 0$}.\\
+    0, & \text{if $ x_{j}^{j} = 1 $}.
+  \end{cases}
+\end{equation}
+\paragraph{In other words $s_{0}$ differs form each $s_{j}$ in the $j^{th}$ element \newline $\Longrightarrow s_{0} \notin \lbrace s_{1}, s_{2},... \rbrace$, but $s_{0}$ is a sequence of 0's and 1's $\Rightarrow s_{0} \in A \Rightarrow\!\Leftarrow$}
 \end{document}
